@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <!-- title -->
+    <title>Synsetica | Website of the Day</title>
+    <style>
+      body {
+        margin: 0; /* 기본 여백 제거 */
+        overflow: hidden;
+      }
+
+      .container {
+        max-width: 3000px;
+        margin-bottom: 270px;
+        text-align: center;
+        padding: 20px;
+        background-color: #f8f8f8;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        flex-direction: column; /* 세로 정렬로 수정 */
+        gap: 20px; /* 요소 간의 간격 */
+      }
+
+      .title-container {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* 중앙 정렬 */
+        width: 100%; /* avg 양쪽 간격 */
+      }
+
+      .title {
+        font-size: 3rem; /* 글씨 크기를 늘렸습니다 */
+        font-family: "Satisfy", cursive;
+        text-align: center;
+        margin: 0 150px; /* 아이콘과의 간격을 벌리기 위해 좌우 마진 추가 */
+      }
+
+      .subtitle {
+        font-size: 1.5rem; /* 추가된 텍스트 스타일 */
+        font-weight: 400;
+        margin-top: 10px;
+        color: #666;
+      }
+
+      .title-container svg {
+        width: 3rem;
+        height: 3rem;
+        transition: transform 0.2s ease;
+      }
+
+      .title-container svg:hover {
+        transform: scale(1.1); /* 호버 시 살짝 확대 */
+      }
+
+      .responsive-video {
+        width: 100%; /* 원하는 너비로 조정 (예: 50%, 300px 등) */
+        max-width: 600px; /* 최대 너비를 설정 */
+        height: auto; /* 비율 유지 */
+      }
+
+      .intro {
+        text-align: center;
+        margin-top: 20px;
+        padding: 20px;
+      }
+
+      .intro p {
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+      }
+
+      .svg-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 8px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="title-container">
+        <div class="title">Make a music video</div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          onclick="handleRightClick()"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"
+          />
+        </svg>
+      </div>
+
+      <div class="subtitle">---------------------</div>
+
+     <!-- 컨테이너 -->
+<div class="container">
+  <!-- 동영상 영역 -->
+  <div class="video">
+    <video class="responsive-video" autoplay loop muted playsinline>
+      <source src="https://noisee.ai/resource/assets/videos/home.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+      <div class="intro">
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="svg-icon"
+            onclick="handleIntroClick()"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 0 1-1.125-1.125M3.375 19.5h1.5C5.496 19.5 6 18.996 6 18.375m-3.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-1.5A1.125 1.125 0 0 1 18 18.375M20.625 4.5H3.375m17.25 0c.621 0 1.125.504 1.125 1.125M20.625 4.5h-1.5C18.504 4.5 18 5.004 18 5.625m3.75 0v1.5c0 .621-.504 1.125-1.125 1.125M3.375 4.5c-.621 0-1.125.504-1.125 1.125M3.375 4.5h1.5C5.496 4.5 6 5.004 6 5.625m-3.75 0v1.5c0 .621.504 1.125 1.125 1.125m0 0h1.5m-1.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m1.5-3.75C5.496 8.25 6 7.746 6 7.125v-1.5M4.875 8.25C5.496 8.25 6 8.754 6 9.375v1.5m0-5.25v5.25m0-5.25C6 5.004 6.504 4.5 7.125 4.5h9.75c.621 0 1.125.504 1.125 1.125m1.125 2.625h1.5m-1.5 0A1.125 1.125 0 0 1 18 7.125v-1.5m1.125 2.625c-.621 0-1.125.504-1.125 1.125v1.5m2.625-2.625c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125M18 5.625v5.25M7.125 12h9.75m-9.75 0A1.125 1.125 0 0 1 6 10.875M7.125 12C6.504 12 6 12.504 6 13.125m0-2.25C6 11.496 5.496 12 4.875 12M18 10.875c0 .621-.504 1.125-1.125 1.125M18 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m-12 5.25v-5.25m0 5.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125m-12 0v-1.5c0-.621-.504-1.125-1.125-1.125M18 18.375v-5.25m0 5.25v-1.5c0-.621.504-1.125 1.125-1.125M18 13.125v1.5c0 .621.504 1.125 1.125 1.125M18 13.125c0-.621.504-1.125 1.125-1.125M6 13.125v1.5c0 .621-.504 1.125-1.125 1.125M6 13.125C6 12.504 5.496 12 4.875 12m-1.5 0h1.5m-1.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M19.125 12h1.5m0 0c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h1.5m14.25 0h1.5"
+            />
+          </svg>
+          Synsetica
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // 오른쪽 SVG 버튼 클릭 시 동작(해당 사이트로 이동 혹은 로컬 파일로 이동)
+      function handleRightClick() {
+        window.location.href = "https://example.com";
+      }
+    </script>
+  </body>
+</html>
